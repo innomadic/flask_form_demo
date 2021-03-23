@@ -4,7 +4,7 @@ from app.forms import LoginForm
 
 @app.route('/')
 @app.route('/index')
-def hello():
+def index():
     return render_template('base.html', title='Home', user='Joe')
 
 @app.route('/login', methods=['GET', 'POST'])
